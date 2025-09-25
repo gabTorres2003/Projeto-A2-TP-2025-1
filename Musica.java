@@ -1,10 +1,11 @@
 public class Musica {
     public String artista, faixa;
     public double dancabilidade, energia, duracaoMin;
-    public long curtidas, visualizacoes;
+    public double curtidas, visualizacoes;
 
-    public Musica(String artista, String faixa, double dancabilidade, double energia, double duracaoMin, long curtidas,
-            long visualizacoes) {
+    public Musica(String artista, String faixa, double dancabilidade, double energia, double duracaoMin,
+            double curtidas,
+            double visualizacoes) {
         this.artista = artista;
         this.curtidas = curtidas;
         this.dancabilidade = dancabilidade;
@@ -54,7 +55,7 @@ public class Musica {
         this.duracaoMin = duracaoMin;
     }
 
-    public long getCurtidas() {
+    public double getCurtidas() {
         return curtidas;
     }
 
@@ -62,7 +63,7 @@ public class Musica {
         this.curtidas = curtidas;
     }
 
-    public long getVisualizacoes() {
+    public double getVisualizacoes() {
         return visualizacoes;
     }
 

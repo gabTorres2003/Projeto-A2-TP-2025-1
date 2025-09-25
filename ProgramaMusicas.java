@@ -31,7 +31,7 @@ public class ProgramaMusicas {
                 switch (opcao) {
                     case 1:
                         manipulador.lerDoArquivoCsv(colecao);
-                        System.out.println("Músicas carregadas do arquivo.");
+                        System.out.println(colecao.obterTotaldeMusicas() + " músicas carregadas do arquivo.");
                         break;
                     case 2:
                         adicionarNovaMusica(scanner, colecao);
@@ -40,7 +40,7 @@ public class ProgramaMusicas {
                         System.out.print("Digite o nome da música para excluir: ");
                         String faixaExcluir = scanner.nextLine();
                         colecao.excluirMusica(faixaExcluir);
-                        System.out.println("Música removida (se encontrada).");
+                        System.out.println("Música removida.");
                         break;
                     case 4:
                         listar(colecao);

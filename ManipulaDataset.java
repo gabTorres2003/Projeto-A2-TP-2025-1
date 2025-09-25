@@ -18,13 +18,14 @@ public class ManipulaDataset {
                 String[] vetorColunas = linha.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
 
                try {
+                
                     String artist = vetorColunas[0];
                     String track = vetorColunas[1];
                     double danceability = Double.parseDouble(vetorColunas[4]);
                     double energy = Double.parseDouble(vetorColunas[5]);
                     double durationMin = Double.parseDouble(vetorColunas[13]);
-                    long views = (long) Double.parseDouble(vetorColunas[16]);
-                    long likes = (long) Double.parseDouble(vetorColunas[17]);
+                    double views = Double.parseDouble(vetorColunas[16]);
+                    double likes = Double.parseDouble(vetorColunas[17]);
 
                     Musica musica = new Musica(artist, track, danceability, energy, durationMin, likes, views);
                     colecao.adicionarMusica(musica);
