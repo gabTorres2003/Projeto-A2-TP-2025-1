@@ -81,6 +81,6 @@ public class ListaDeMusicas implements ColecaoDeMusicas {
     }
 
     public void ordenarMusicas(Ordenador ordenador) {
-
+        ordenador.ordenar(this);
     }
 }
